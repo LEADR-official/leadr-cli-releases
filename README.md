@@ -244,6 +244,29 @@ leadr --host http://0.0.0.0:3000 account list         # Uses custom local port
 
 Admin API keys, client tokens, and device credentials are stored in `~/.leadr/config.toml` with restrictive permissions (0600 on Unix systems).
 
+## Release Process
+
+Releases are managed via GitHub Actions using the "Release and Publish CLI" workflow.
+
+### Steps
+
+1. Go to **Actions** → **Release and Publish CLI**
+2. Click **Run workflow**
+3. Select the version bump type:
+   - **patch**: Bug fixes and minor changes (v1.2.3 → v1.2.4)
+   - **minor**: New features, backwards compatible (v1.2.3 → v1.3.0)
+   - **major**: Breaking changes (v1.2.3 → v2.0.0)
+4. Click **Run workflow** to start the release
+
+### What the Workflow Does
+
+1. Calculates the new version based on bump type
+2. Updates `Cargo.toml` with the new version
+3. Creates a git tag in the private repo
+4. Syncs README, LICENSE, and install script to the public releases repo
+5. Builds binaries for macOS (Intel + Apple Silicon) and Windows
+6. Creates a GitHub release in `leadr-cli-releases` with binaries and checksums
+
 ## Development
 
 ### Building
