@@ -10,7 +10,7 @@ Command-line tool for managing your LEADR account and leaderboards.
 ### Quick Install (macOS/Windows)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/LEADR-official/leadr-cli-releases/refs/tags/v0.3.0/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/LEADR-official/leadr-cli-releases/refs/tags/v0.4.0/install.sh | bash
 ```
 
 ### Manual Download
