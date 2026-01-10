@@ -34,4 +34,4 @@ leadr --version
 
 ## Need some help?
 
-Give us a shout on Discord: discord.gg/RMUukcAxSZ
+Give us a shout on Discord: https://discord.gg/RMUukcAxSZ
